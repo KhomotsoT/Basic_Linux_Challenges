@@ -1,0 +1,218 @@
+                                    TASK 1
+
+1. list of 26 folders appeared as below:
+recruit@recruit-Mecer-X102:~$ ls
+Algorythims          Music             snap
+anaconda3            my_files          tech-department
+cd                   nano.save         Templates
+Desktop              passwordChecker   this-will-be-another-repo
+Documents            personal-website  tmp
+Downloads            Pictures          Videos
+git-basic-exercises  Public            wor
+Homework             Search_results    work
+Katas                simpleCalculator  workspace
+
+2. Its show the current working directory
+:recruit@recruit-Mecer-X102:~$ pwd
+/home/recruit
+
+3.recruit@recruit-Mecer-X102:~$ mkdir workspace
+mkdir: cannot create directory ‘workspace’: File exists
+recruit@recruit-Mecer-X102:~$ cd ~/workspace
+
+-The 'workspace' directory already existed.
+-cd ~/workspace was changing directory from current to workspace.
+
+4. ls listed folders and files in 'workspace' as below:
+recruit@recruit-Mecer-X102:~/workspace$ ls
+
+CHANGELOG.md  README.md          search_result.md   tmp
+cohort.md     recruits.md        search_results.md  umuzi
+excercise.md  seacrh_results.md  summary.md         umuzi.md
+
+5. recruit@recruit-Mecer-X102:~/workspace$ touch README.md
+
+6. recruit@recruit-Mecer-X102:~/workspace$ cp README.md CHANGELOG.md
+recruit@recruit-Mecer-X102:~/workspace$ 
+
+
+
+                                    TASK 2
+
+recruit@recruit-Mecer-X102:~/workspace$ touch exercise.md
+recruit@recruit-Mecer-X102:~/workspace$ mv exercise.md /tmp
+recruit@recruit-Mecer-X102:~/workspace$ rm /tmp/exercise.md
+
+
+
+                                    TASK 3
+
+1.recruit@recruit-Mecer-X102:~/workspace$ touch umuzi.md recruits.md cohort.md
+
+2.recruit@recruit-Mecer-X102:~/workspace$ vi umuzi.md
+  recruit@recruit-Mecer-X102:~/workspace$ vi recruits.md
+  recruit@recruit-Mecer-X102:~/workspace$ vi cohort.md
+
+3.recruit@recruit-Mecer-X102:~/workspace$ cat umuzi.md recruits.md cohort.md
+poetry can be hard, but MUB somehow made it better
+meeting new people can put you out of your comfort zone yet friends can be made here
+being part of a cohortcan be inclusive, think i'm the only person whose part of 3!
+
+4.recruit@recruit-Mecer-X102:~/workspace$ cat umuzi.md recruits.md cohort.md >> summary.md
+
+5.recruit@recruit-Mecer-X102:~/workspace$ echo "The End" >>summary.md
+
+                
+                                    TASK 4 
+
+1.recruit@recruit-Mecer-X102:~/workspace$ locate umuzi
+/home/recruit/tech-department/docs/makeumuzibetter
+/home/recruit/tech-department/docs/images/umuzi.png
+/home/recruit/tech-department/docs/makeumuzibetter/index.html
+/home/recruit/tech-department/docs/makeumuzibetter/index.xml
+/home/recruit/tech-department/static/images/umuzi.png
+/home/recruit/workspace/umuzi
+/home/recruit/workspace/umuzi.md
+/home/recruit/workspace/tmp/umuzi
+
+2.recruit@recruit-Mecer-X102:~/workspace$ locate umuzi > search_result.md
+
+
+                                    TASK 5
+
+1.recruit@recruit-Mecer-X102:~/Documents$ touch pad.md
+
+2.recruit@recruit-Mecer-X102:~$ cd Desktop
+  recruit@recruit-Mecer-X102:~/Desktop$ mkdir work
+  mkdir: cannot create directory ‘work’: File exists
+
+3.recruit@recruit-Mecer-X102:~/Desktop$ cp ~/Documents/pad.md pad_copy.md
+
+4.recruit@recruit-Mecer-X102:~/Desktop$  locate updatedb
+  /etc/updatedb.conf
+  /etc/alternatives/updatedb
+  /etc/alternatives/updatedb.8.gz
+  /usr/bin/updatedb
+  /usr/bin/updatedb.mlocate
+  /usr/share/man/man5/updatedb.conf.5.gz
+  /usr/share/man/man8/updatedb.8.gz
+  /usr/share/man/man8/updatedb.mlocate.8.gz
+
+5.recruit@recruit-Mecer-X102:~/Desktop$ cd ..
+
+6.recruit@recruit-Mecer-X102:~$ locate pad_copy.md
+  /home/recruit/Desktop/pad_copy.md
+
+
+                        
+                                TASK 6
+
+1.recruit@recruit-Mecer-X102:~$ find . -type f -name "*.pdf"
+find: ‘./.config/configstore’: Permission denied
+./Desktop/Assessment Agreement IT.pdf
+./Desktop/Download/payment_notification-6.pdf
+./Desktop/Download/statement.pdf
+./Desktop/Download/chapter1.pdf
+./Desktop/Download/account_statement.pdf
+./Desktop/Download/bbd762e9dd70dd20afe8740a6d09ec85ffed.pdf
+./Desktop/Download/Name Surname_Personal Details.pdf
+./Desktop/Download/payment_notification-7.pdf
+./Desktop/Download/Introduction_to_Data_Science_with_Python.pdf
+./Desktop/Download/Broadsheet.pdf
+./Desktop/Download/20170929_Snake_Removals_List_DESKTOP.pdf
+./Desktop/Download/Copy of AVENGERS.pdf
+./Desktop/Download/OPEN LEARNING SUBJECTS TO BE OFFERED IN 2019.pdf
+./Desktop/Download/MTN Sep Trader.pdf
+./Desktop/Download/53569318_Exam_Timetable.pdf
+./Desktop/Download/Packt.Mastering.Aug.2015.ISBN.1784390151.pdf
+./Desktop/Download/lr_3pcdp1810_003_online_dp-brochure.pdf
+./Desktop/Download/Kgarebana_Catalogue.pdf
+./Downloads/WELLNESS WORKSHOP.pdf
+./Downloads/Human Intelligence - MUB.pdf
+./Downloads/invoice.pdf
+./Downloads/Human Intelligence - MUB (1).pdf
+./anaconda3/lib/python3.7/site-packages/matplotlib/mpl-data/images/hand.pdf
+./anaconda3/lib/python3.7/site-packages/matplotlib/mpl-data/images/matplotlib.pdf
+./anaconda3/lib/python3.7/site-packages/matplotlib/mpl-data/images/subplots.pdf
+./anaconda3/lib/python3.7/site-packages/matplotlib/mpl-data/images/back.pdf
+./anaconda3/lib/python3.7/site-packages/matplotlib/mpl-data/images/forward.pdf
+./anaconda3/lib/python3.7/site-packages/matplotlib/mpl-data/images/move.pdf
+./anaconda3/lib/python3.7/site-packages/matplotlib/mpl-data/images/qt4_editor_options.pdf
+./anaconda3/lib/python3.7/site-packages/matplotlib/mpl-data/images/filesave.pdf
+./anaconda3/lib/python3.7/site-packages/matplotlib/mpl-data/images/zoom_to_rect.pdf
+./anaconda3/lib/python3.7/site-packages/matplotlib/mpl-data/images/home.pdf
+./anaconda3/lib/python3.7/site-packages/matplotlib/mpl-data/images/help.pdf
+./anaconda3/share/doc/libxml2-2.9.9/html/tutorial/xmltutorial.pdf
+./anaconda3/pkgs/libxml2-2.9.9-hea5a465_1/share/doc/libxml2-2.9.9/html/tutorial/xmltutorial.pdf
+./anaconda3/pkgs/matplotlib-3.1.1-py37h5429711_0/lib/python3.7/site-packages/matplotlib/mpl-data/images/hand.pdf
+./anaconda3/pkgs/matplotlib-3.1.1-py37h5429711_0/lib/python3.7/site-packages/matplotlib/mpl-data/images/matplotlib.pdf
+./anaconda3/pkgs/matplotlib-3.1.1-py37h5429711_0/lib/python3.7/site-packages/matplotlib/mpl-data/images/subplots.pdf
+./anaconda3/pkgs/matplotlib-3.1.1-py37h5429711_0/lib/python3.7/site-packages/matplotlib/mpl-data/images/back.pdf
+./anaconda3/pkgs/matplotlib-3.1.1-py37h5429711_0/lib/python3.7/site-packages/matplotlib/mpl-data/images/forward.pdf
+./anaconda3/pkgs/matplotlib-3.1.1-py37h5429711_0/lib/python3.7/site-packages/matplotlib/mpl-data/images/move.pdf
+./anaconda3/pkgs/matplotlib-3.1.1-py37h5429711_0/lib/python3.7/site-packages/matplotlib/mpl-data/images/qt4_editor_options.pdf
+./anaconda3/pkgs/matplotlib-3.1.1-py37h5429711_0/lib/python3.7/site-packages/matplotlib/mpl-data/images/filesave.pdf
+./anaconda3/pkgs/matplotlib-3.1.1-py37h5429711_0/lib/python3.7/site-packages/matplotlib/mpl-data/images/zoom_to_rect.pdf
+./anaconda3/pkgs/matplotlib-3.1.1-py37h5429711_0/lib/python3.7/site-packages/matplotlib/mpl-data/images/home.pdf
+./anaconda3/pkgs/matplotlib-3.1.1-py37h5429711_0/lib/python3.7/site-packages/matplotlib/mpl-data/images/help.pdf
+./tech-department/themes/hugo-theme-learn/exampleSite/content/shortcodes/attachments.en.files/adivorciarsetoca00cape.pdf
+./tech-department/themes/hugo-theme-learn/exampleSite/content/shortcodes/attachments.en.files/Carroll_AliceAuPaysDesMerveilles.pdf
+./tech-department/themes/hugo-theme-learn/exampleSite/content/shortcodes/attachments.fr.files/adivorciarsetoca00cape.pdf
+./tech-department/themes/hugo-theme-learn/exampleSite/content/shortcodes/attachments.fr.files/Carroll_AliceAuPaysDesMerveilles.pdf
+./Documents/IDEO - HCD Readings and Workshop Guides.pdf
+./Documents/Assessment Agreement IT-2.pdf
+
+2.recruit@recruit-Mecer-X102:~$ locate .pdf >> results.md
+
+3.recruit@recruit-Mecer-X102:~$ find . -maxdepth 1 -newermt "2020-01-17"
+.
+./results.md
+./.Xauthority
+./.config
+./.ICEauthority
+./Downloads
+./.xsession-errors
+./.bash_history
+./workspace
+
+
+
+                                    TASK 7
+
+1.recruit@recruit-Mecer-X102:~$ nano my_bio.md
+
+ GNU nano 2.9.3                     my_bio.md                               
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                [ New File ]
+^G Get Help    ^O Write Out   ^W Where Is    ^K Cut Text    ^J Justify
+^X Exit        ^R Read File   ^\ Replace     ^U Uncut Text  ^T To Spell
+
+
+
+2.ctrl+o then ctrl+x
+
+3.recruit@recruit-Mecer-X102:~$ mkdir my_files
+  mkdir: cannot create directory ‘my_files’: File exists
+  recruit@recruit-Mecer-X102:~$ mv my_bio.md my_files
+
+
+
